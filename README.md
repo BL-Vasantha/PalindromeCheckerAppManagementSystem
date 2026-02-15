@@ -1,211 +1,55 @@
-# PalindromeCheckerAppManagementSystem
+# 🚀 Palindrome Checker App
 
-
-
-## 📌 Objective
-The objective of the **PalindromeChecker App** is to design and implement a
-**console-based Java application** that validates whether a given string is a
-palindrome under different conditions, while strengthening **core programming
-fundamentals** and **data structure concepts**.
+The **Palindrome Checker App** is a console-based Java application designed to validate whether a given string is a palindrome using multiple approaches.  
+This project strengthens **core Java fundamentals**, **string handling**, and **data structure concepts** through progressive use cases.
 
 ---
 
-## 🚀 Use Case 1 (UC1): Application Entry & Welcome Message
+## 🔹 UC4: Character Array Based Palindrome Check
 
-### 🎯 Goal
-Display a welcome message and application details at startup.
-
-### 👤 Actor
-User
-
-### 🔄 Flow
-1. Program starts.
-2. JVM invokes the `main()` method.
-3. Application name is displayed.
-4. Application version is displayed.
-5. Program continues to the next use case or exits.
+### 🎯 Objective
+To determine whether a given string is a palindrome by converting it into a **character array** and comparing characters efficiently using the **two-pointer technique**.
 
 ---
 
-## 🧠 Key Concepts Used in UC1
+### 🔄 Application Flow
 
-- **Class**  
-  Acts as a container for the Palindrome Checker application logic.
+1. Program starts
+2. Input string is converted into a `char[]`
+3. Two pointers are initialized (start & end)
+4. Characters at both ends are compared
+5. Pointers move inward after each comparison
+6. Result is displayed on the console
+7. Program exits
 
-- **Main Method**  
-  Entry point of the Java application with the signature:  
-  `public static void main(String[] args)`
+---
 
-- **Static Keyword**  
-  Allows the JVM to invoke the `main()` method without creating an object.
+### 🧠 Key Concepts Used
+
+- **Character Array (`char[]`)**  
+  A primitive array used to store individual characters of a string.
+
+- **Array Indexing**  
+  Accessing elements using index positions starting from `0`.
+
+- **Two-Pointer Technique**  
+  One pointer starts from the beginning and the other from the end, reducing unnecessary comparisons.
+
+- **Conditional Statements**  
+  Used to detect mismatched characters.
+
+- **Time Complexity Awareness**  
+  Optimized solution with **O(n)** time complexity and **O(1)** extra space.
 
 - **Console Output**  
-  `System.out.println()` is used to display messages on the console.
-
-- **Application Flow Control**  
-  Defines the startup behavior before palindrome processing begins.
+  `System.out.println()` is used to display the result.
 
 ---
 
+### 🧩 Data Structure Used
+- `char[]`
 
 ---
-
-## 🛠️ Technologies Used
-- Java (JDK 8 or above)
-- Console-based application
-- 
-
----
-
-## ▶️ How to Run the Application
-
-1. Open a terminal or command prompt
-2. Navigate to the project directory
-3. Compile the program: javac PalindromeCheckerApp.java
-4. Run the program: java PalindromeCheckerApp
-
-
-
----
-
-## 📤 Sample Output
-====================================
-Welcome to Palindrome Checker Management System
-Application Version : 1.0
-
-System Initialized Successfully.
-
----
-
-## 📈 Future Enhancements
-- User input handling
-- Palindrome checking logic
-- Menu-driven interface
-- Input validation
-- Use of data structures for optimization
-
----
-
-## 👩‍💻 Author
-**Vasantha .R**
-
----
-
-## 🏷️ Version
-**1.0** – Application entry and welcome message (UC1)
-
----
-
-
-
----
-
-## 🚀 Use Case 2 (UC2): Print a Hardcoded Palindrome Result
-
-### 🎯 Goal
-Display whether a hardcoded string is a palindrome.
-
-### 👤 Actor
-User
-
----
-
-### 🔄 Flow
-1. Program starts.
-2. A hardcoded string is initialized.
-3. The string is checked for palindrome logic.
-4. The result is printed on the console.
-5. Program exits.
-
----
-
-## 🧠 Key Concepts Used in UC2
-
-- **Class**  
-  In Java, every program must be written inside a class.  
-  The class acts as a container for program logic.
-
-- **Main Method**  
-  Entry point of the Java application with the signature:  
-  `public static void main(String[] args)`
-
-- **Static Keyword**  
-  Allows the JVM to invoke the `main()` method without creating
-  an object of the class.
-
-- **String**  
-  A built-in Java class used to store and manipulate textual data.
-  Here, it stores the word to be checked for a palindrome.
-
-- **String Literal**  
-  Text enclosed within double quotes (e.g., `"madam"`),
-  stored in the String Constant Pool.
-
-- **Loop (for loop)**  
-  Iterates only till half of the string length to compare characters
-  from both ends.
-
-- **Conditional Statement (if-else)**  
-  Used to verify whether the string satisfies the palindrome condition.
-
-- **Console Output**  
-  `System.out.println()` is used to display the input and result.
-
----
-
-## 🧩 Data Structure Used
-- **String**
-
----
----
-
-## 🚀 Use Case 3 (UC3): Palindrome Check Using String Reverse
-
-### 🎯 Goal
-Check whether a string is a palindrome by reversing it.
-
----
-
-### 🔄 Flow
-1. Reverse the string using a loop.
-2. Compare the original string with the reversed string.
-3. Display the result.
-4. Program exits.
-
----
-
-## 🧠 Key Concepts Used in UC3
-
-- **Loop (for loop)**  
-  Used to iterate through the characters of the string in reverse order
-  to construct the reversed string.
-
-- **String Immutability**  
-  In Java, `String` objects are immutable.  
-  Each modification creates a new `String` object in memory.
-
-- **String Concatenation (+)**  
-  Used to build the reversed string character by character.  
-  This approach is intentionally used to demonstrate its drawbacks,
-  which will be improved in later use cases.
-
-- **equals() Method**  
-  Used to compare the actual content of two `String` objects rather than
-  memory references.
-
-- **Console Output**  
-  `System.out.println()` is used to display the input and result.
-
----
-
-## 🧩 Data Structure Used
-- **String**
-
----
-
-
-
-
 
 
 
