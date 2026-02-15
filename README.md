@@ -61,7 +61,9 @@ User
 
 1. Open a terminal or command prompt
 2. Navigate to the project directory
-3. Compile the program:
+3. Compile the program: javac PalindromeCheckerApp.java
+4. Run the program: java PalindromeCheckerApp
+
 
 
 ---
